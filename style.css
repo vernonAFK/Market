@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri;
+  user-select: none;
+}
+
+header {
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2vw;
+}
+
+header h2 {
+  font-size: 2vw;
+}
+
+header h3 {
+  font-size: 1.1vw;
+}
+
+ol {
+  display: inline;
+  font-size: 1.1vw;
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+form {
+  text-align: center;
+  margin: 2.5% auto;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 60vh;
+  padding: 2.5%;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+
+form h2 {
+  font-size: 2vw;
+}
+
+form input {
+  margin: 1% auto;
+  width: 50%;
+  padding: 1.5%;
+  font-size: 1vw;
+  cursor: pointer;
+  outline: none;
+  transition: ease 0.3s all;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+label {
+  color: red;
+  transition: ease 0.3s all;
+}
+
+span {
+  font-size: 1vw;
+  margin-top: 0.5%;
+}
+
+#change-form {
+  cursor: pointer;
+  color: cornflowerblue;
+}
+
+#change-form:hover {
+  text-decoration: underline;
+}
+
+.invisible {
+  opacity: 0;
+  display: none;
+}
+
+.invisible-label {
+  opacity: 0;
+}
+
+main {
+  padding-top: 2%;
+}
+
+main h2 {
+  font-size: 1.5rem;
+}
