@@ -1,3 +1,5 @@
+<? require_once("find_goods.php"); ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -14,9 +16,18 @@
         <nav>
             <ul>
                 <ol><a href="auth.php">Профиль</a></ol>
-                <ol><a href="">Корзина</a></ol>
             </ul>
         </nav>
     </header>
+
+    <main>
+    <? for ($i = 0; $i < $count_goods; $i++) { ?>
+        <div>
+            <h4><? echo $name[$i]; ?></h4>
+            <p>Цена: <? echo $price[$i]; ?> $</p>
+            <a href="add_to_cart.php?add=<? echo $id[$i]; ?>">Добавить в корзину</a>
+        </div>
+    <? } ?>
+    </main>
 </body>
 </html>

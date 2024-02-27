@@ -17,7 +17,7 @@ change_form_button.addEventListener("click", () => {
       login_inputs.forEach(login_input => {
         login_input.setAttribute("required", true);
         login_input.classList.remove("invisible");
-      });
+      })
 
       submit_input.value = "Зарегистрироваться";
 
@@ -34,7 +34,7 @@ change_form_button.addEventListener("click", () => {
       login_inputs.forEach(login_input => {
         login_input.removeAttribute("required");
         login_input.classList.add("invisible");
-      });
+      })
 
       submit_input.value = "Войти";
 
@@ -44,7 +44,7 @@ change_form_button.addEventListener("click", () => {
       login_form = false;
       controllerEventListener(login_form);
     }
-});
+})
 
 // Проверка на подтверждение пароля в форме регистрации
 const password_inputs = document.querySelectorAll("input[type=password]");
@@ -66,11 +66,11 @@ function controllerEventListener(controller) {
   if (controller) {
     password_inputs.forEach(password_input => {
       password_input.addEventListener("input", checkPasswords);
-    });
+    })
   } else {
     password_inputs.forEach(password_input => {
       password_input.removeEventListener("input", checkPasswords);
-    });
+    })
   }
   label.classList.add("invisible-label");
 }
@@ -86,8 +86,8 @@ inputs.forEach(input => {
       label.innerHTML = "Запрещено использовать спец.символы!";
       label.classList.remove("invisible-label");
     }
-  });
-});
+  })
+})
 
 if (label.innerHTML != null) {
   label.classList.remove("invisible-label");

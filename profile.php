@@ -3,6 +3,7 @@ if (!isset($_COOKIE["username"])) {
     header("Location: auth.php");
     exit;
 }
+require_once("find_user_goods.php");
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,13 @@ if (!isset($_COOKIE["username"])) {
     </header>
 
     <main>
-        <h2>Ваша корзина:</h2>
+        <? for ($i = 0; $i < $count_user_goods; $i++) { ?>
+            <div>
+                <h4><? echo $name[$i]; ?></h4>
+                <p>Цена: <? echo $price[$i]; ?> $</p>
+                <p>Количество: <input type="number" min="1" max="50" value=<? echo $count[$i]; ?>> </input> </p>
+            </div>
+        <? } ?>
     </main>
 </body>
 </html>

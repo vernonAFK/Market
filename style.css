@@ -96,9 +96,31 @@ span {
 }
 
 main {
+  display: flex;
+  justify-content: space-between;
   padding-top: 2%;
 }
 
 main h2 {
   font-size: 1.5rem;
+}
+
+main div {
+  margin: 2.5%;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 20%;
+  padding: 2.5%;
+  font-size: 16pt;
+}
+
+main div a:hover {
+  text-decoration: underline;
+}
+
+input[type="number"] {
+  width: 20%;
+  border: 0;
+  outline: none;
+  font-size: 14pt;
 }
