@@ -19,6 +19,7 @@ change_form_button.addEventListener("click", () => {
         login_input.classList.remove("invisible");
       })
 
+      submit_input.removeAttribute("disabled");
       submit_input.value = "Зарегистрироваться";
 
       helper_text.innerHTML = "Eсть профиль?";
@@ -36,6 +37,7 @@ change_form_button.addEventListener("click", () => {
         login_input.classList.add("invisible");
       })
 
+      submit_input.removeAttribute("disabled");
       submit_input.value = "Войти";
 
       helper_text.innerHTML = "Нет профиля?";

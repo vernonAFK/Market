@@ -14,6 +14,7 @@ require_once("find_user_goods.php");
     <title>Профиль</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="cart.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,8 +29,8 @@ require_once("find_user_goods.php");
         <? for ($i = 0; $i < $count_user_goods; $i++) { ?>
             <div>
                 <h4><? echo $name[$i]; ?></h4>
-                <p>Цена: <? echo $price[$i]; ?> $</p>
-                <p>Количество: <input type="number" min="1" max="50" value=<? echo $count[$i]; ?>> </input> </p>
+                <p>Цена: <span><? echo $price[$i]; ?></span> $</p>
+                <p>Количество: <span><? echo $count[$i]; ?></span></p>
             </div>
         <? } ?>
     </main>
